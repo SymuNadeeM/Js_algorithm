@@ -14,3 +14,15 @@ function Linear(arr, target) {
   return -1;
 }
 console.log(Linear([-5, 5, 9, 10], 9));
+
+function LinearTwo(n) {
+  let arr = [-5, 5, 9, 10];
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] === n) {
+      return i;
+    }
+  }
+  return -1
+}
+
+console.log(LinearTwo(10));
